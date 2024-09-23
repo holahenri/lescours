@@ -3,30 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Téléchargements</title>
+    <title>Téléchargements de Documents</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
         }
         h1 {
-            color: #333;
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
         }
         ul {
             list-style-type: none;
             padding: 0;
         }
         li {
-            margin: 10px 0;
+            margin: 15px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: 1px solid #007bff;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        a:hover {
+            background-color: #007bff;
+            color: white;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
-    <h1>Téléchargements de Documents</h1>
-    <ul>
-        <li><a href="lien_vers_votre_document_1.pdf" download>Télécharger Document 1</a></li>
-        <li><a href="lien_vers_votre_document_2.pdf" download>Télécharger Document 2</a></li>
-        <li><a href="lien_vers_votre_document_3.pdf" download>Télécharger Document 3</a></li>
-    </ul>
+    <header>
+        <h1>Téléchargements de Documents</h1>
+    </header>
+    <div class="container">
+        <h2>Liste des documents disponibles :</h2>
+        <ul>
+            <li><a href="lien_vers_votre_document_1.pdf" download>Télécharger Document 1</a></li>
+            <li><a href="lien_vers_votre_document_2.pdf" download>Télécharger Document 2</a></li>
+            <li><a href="lien_vers_votre_document_3.pdf" download>Télécharger Document 3</a></li>
+        </ul>
+    </div>
+    <footer>
+        &copy; 2024 Votre Nom ou Organisation
+    </footer>
 </body>
 </html>
